@@ -1,0 +1,97 @@
+html,
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+.main-card {
+    background-color: rgb(179, 179, 224);
+    height: 100%;
+}
+
+input {
+    width: 85%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 10px 20px;
+    margin: 10px 6px;
+    border-bottom: 1px solid rgb(27, 65, 134);
+    box-sizing: border-box;
+}
+
+input:hover {
+    border: none;
+    border-bottom: 1px solid rgb(4, 74, 87);
+}
+
+button {
+    width: 14%;
+    border-radius: 5px;
+    padding: auto;
+    margin: 10px 6px;
+    border: 1px seagreen;
+    background-color: rgb(193, 240, 146);
+}
+
+button:hover {
+    background-color: chartreuse;
+}
+
+.search-bar {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.weather-card {
+    display: grid;
+    padding: 10px;
+    height: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(186px, auto));
+    grid-template-columns: 3fr 1fr 2fr;
+}
+
+.city-info {
+    margin: 6px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(115, 243, 200);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.time-info {
+    margin: 6px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(156, 243, 148);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.temp-info {
+    margin: 6px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(245, 129, 109);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+p,
+h3,
+h4,
+h1,
+h2 {
+    text-decoration: solid;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(2, 49, 80);
+}
